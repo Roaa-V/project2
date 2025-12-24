@@ -1,0 +1,10 @@
+/* Keep it neutral so changing theme later is easy */
+body { font-family: system-ui, Arial, sans-serif; }
+header p.lead { max-width: 60ch; }
+ /* Neutral base style (easy to change later) */
+    .page-header {
+      border-bottom: 1px solid #e9ecef;
+    }
+    .section-title {
+      letter-spacing: 0.2px;
+    }
