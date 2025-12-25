@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | FitFuel</title>
+  <title>About Us | Bloom</title>
 
   <!-- Bootstrap CSS -->
   <link
@@ -11,15 +11,19 @@
     rel="stylesheet"
   />
 
-  
+  <!-- Your external CSS -->
+  <link rel="stylesheet" href="AboutUs.css" />
 </head>
 
-<body class="bg-light">
+<body class="page-bg">
 
   <!-- ✅ Navbar (keep same across all pages) -->
-  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Bloom</a>
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <img src="Fitness Lavender Heart app icon.jpeg" class="brand-mark" alt="Bloom logo" />
+        <span class="brand-text">Bloom</span>
+      </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
@@ -36,130 +40,224 @@
     </div>
   </nav>
 
-  <!-- ✅ Page Header -->
-  <header class="page-header bg-white">
-    <div class="container py-5">
+  <!-- ✅ Hero / Page Header -->
+  <header class="hero-wrap">
+    <div class="container hero-inner">
       <div class="row align-items-center g-4">
-        <div class="col-12 col-lg-8">
-          <h1 class="display-6 fw-bold mb-2">About Bloom</h1>
-          <p class="lead mb-0 text-secondary">
-           Bloom is a fitness and health platform designed to help people take control of their well-being through clarity,
-            balance, and practical tools. We focus on realistic guidance and measurable progress — without extremes or unnecessary complexity.
+        <div class="col-12 col-lg-6">
+          <p class="badge-soft mb-3">Fitness • Nutrition • Healthy Habits</p>
+
+          <h1 class="display-6 fw-bold mb-3 hero-title">
+            Your journey to wellness <span class="accent">starts here.</span>
+          </h1>
+
+          <p class="lead mb-4 hero-sub">
+            Bloom is a fitness and health platform built for people who want to take care of 
+            themselves without pressure, extremes, or unrealistic expectations. 
+            We focus on simple guidance, practical tools, and habits that feel doable in real life.
           </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <a class="btn btn-primary-soft btn-lg" href="calculator.html">Try Our Calculator</a>
+            <a class="btn btn-outline-soft btn-lg" href="contact.html">Talk to Us</a>
+          </div>
+
+          <div class="hero-mini mt-4 d-flex gap-3">
+            <div class="mini-chip">
+              <img src="dumbell.png" alt="Strength" />
+              <span>Strength</span>
+            </div>
+            <div class="mini-chip">
+              <img src="mat.png" alt="Mobility" />
+              <span>Mobility</span>
+            </div>
+            <div class="mini-chip">
+              <img src="dumbell2.png" alt="Consistency" />
+              <span>Consistency</span>
+            </div>
+          </div>
         </div>
 
-        <div class="col-12 col-lg-4 text-lg-end">
-          <a class="btn btn-dark btn-lg" href="calculator.html">
-            Try Our Calculator
-          </a>
-          <p class="small text-secondary mt-2 mb-0">
-            BMI / Calories tools (based on your project idea)
-          </p>
+        <div class="col-12 col-lg-6">
+          <div class="hero-card">
+            <img src="run.png" class="img-fluid hero-illustration" alt="Running illustration" />
+            <img src="Fitness Lavender Heart app icon.jpeg" class="hero-badge" alt="Bloom badge" />
+          </div>
         </div>
       </div>
     </div>
   </header>
 
   <!-- ✅ Main Content -->
-  <main class="container py-5">
+  <main class="container section-pad">
 
-    <!-- Story -->
+    <!-- Our Story -->
     <section class="mb-5">
-      <h2 class="h4 fw-bold section-title mb-3">Our Story</h2>
+      <div class="section-head d-flex align-items-end justify-content-between gap-3 flex-wrap">
+        <div>
+          <h2 class="h3 fw-bold mb-1">Our Story</h2>
+          
+        </div>
+        <img src="dumbell2.png" class="section-icon" alt="Section icon" />
+      </div>
 
-      <div class="row g-4">
-        <div class="col-12 col-lg-8">
-          <div class="bg-white p-4 rounded-3 border">
+      <div class="row g-4 mt-1">
+        <div class="col-12 col-lg-7">
+          <div class="card-soft h-100">
             <p class="mb-3">
               Bloom was built on the belief that effective health habits come from understanding,
-               not pressure. Too often, people are overwhelmed by conflicting advice and unrealistic 
-               standards that make consistency difficult.
-               We created Bloom to cut through that noise. Our platform
-              combines straightforward guidance with practical tools that help users make informed decisions and track progress in a way that fits real life.
-            </p>
+                 not pressure. Too often, people are overwhelmed by conflicting advice and unrealistic
+                  standards that make consistency difficult.
+                
             <p class="mb-0">
-              So we focused on one thing: making health simple. Clear steps. Useful calculators.
-              And advice that works whether you’re a beginner, busy, or just tired of starting over.
+              We created Bloom to cut through that noise. Our platform combines straightforward 
+              guidance with practical tools that help users make informed decisions and track 
+              progress in a way that fits real life.
             </p>
           </div>
         </div>
 
-        <div class="col-12 col-lg-4">
-          <div class="bg-white p-4 rounded-3 border h-100">
-            <h3 class="h6 fw-bold mb-2">What we do</h3>
-            <ul class="mb-0 text-secondary">
-              <li>Structured fitness & nutrition guidance</li>
-              <li>Clear health calculators and tools</li>
-              <li>Habit building support for beginners and non-experts</li>
-              <li>Beginner-friendly plans</li>
-            </ul>
+        <div class="col-12 col-lg-5">
+          <div class="image-soft h-100">
+            <img src="g.jpg" class="img-fluid rounded-4" alt="Team illustration" />
+            <div class="image-caption">
+              <span class="dot"></span>
+              Built for beginners, busy people, and anyone tired of restarting.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="mb-5">
+      <div class="section-head d-flex align-items-end justify-content-between gap-3 flex-wrap">
+        <div>
+          <h2 class="h3 fw-bold mb-1">What we focus on</h2>
+          <p class="text-muted mb-0">Practical support, clean tools, and zero shame.</p>
+        </div>
+        <img src="mat.png" class="section-icon" alt="Section icon" />
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-soft h-100">
+            <div class="icon-row">
+              <img src="dumbell.png" alt="Icon" />
+              <h3 class="h6 fw-bold mb-0">Structured fitness and nutrition guidance</h3>
+            </div>
+            <p class="text-muted mb-0">
+              Beginner-friendly routines you can actually repeat without burning out.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-soft h-100">
+            <div class="icon-row">
+              <img src="dumbell2.png" alt="Icon" />
+              <h3 class="h6 fw-bold mb-0">Clear health calculators and tools</h3>
+            </div>
+            <p class="text-muted mb-0">
+              BMI and calorie needs calculators — quick, clear, and useful.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-soft h-100">
+            <div class="icon-row">
+              <img src="mat.png" alt="Icon" />
+              <h3 class="h6 fw-bold mb-0">Long-term habit building</h3>
+            </div>
+            <p class="text-muted mb-0">
+              Small steps, consistent wins, and plans that fit your schedule.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Vision + Mission -->
-    <section class="mb-5">
-      <div class="row g-4">
+    <section class="mb-5 position-relative">
+      <img src="Fitness Lavender Heart app icon.jpeg" class="bg-sticker" alt="Decor sticker" />
+
+      <div class="section-head d-flex align-items-end justify-content-between gap-3 flex-wrap">
+        <div>
+          <h2 class="h3 fw-bold mb-1">Vision & Mission</h2>
+          <p class="text-muted mb-0">Where we’re going and why we exist.</p>
+        </div>
+        <img src="dumbell.png" class="section-icon" alt="Section icon" />
+      </div>
+
+      <div class="row g-4 mt-1">
         <div class="col-12 col-md-6">
-          <div class="bg-white p-4 rounded-3 border h-100">
-            <h2 class="h5 fw-bold mb-2">Our Vision</h2>
-            <p class="mb-0 text-secondary">
-              A world where healthy choices are simple, accessible, and sustainable for everyone
-               something people can return to without guilt, fear, or pressure, no matter where they’re starting from.
-         
+          <div class="card-soft h-100">
+            <h3 class="h5 fw-bold mb-2">Our Vision</h3>
+            <p class="text-muted mb-0">
+              Our vision is to make health feel approachable and supportive — something people can 
+              return to without guilt, fear, or pressure, no matter where they’re starting from.
             </p>
           </div>
         </div>
 
         <div class="col-12 col-md-6">
-          <div class="bg-white p-4 rounded-3 border h-100">
-            <h2 class="h5 fw-bold mb-2">Our Mission</h2>
-            <p class="mb-0 text-secondary">
-            To provide clear, easy-to-use tools and thoughtful guidance that help people understand their bodies, track progress, and build healthier habits at their own pace.
+          <div class="card-soft h-100">
+            <h3 class="h5 fw-bold mb-2">Our Mission</h3>
+            <p class="text-muted mb-0">
+              Our mission is to provide clear, easy-to-use tools and thoughtful guidance that help 
+              people understand their bodies, track progress, set realistic goals, and maintain 
+              healthy habits over time.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Values / Why Choose Us -->
+    <!-- Values -->
     <section class="mb-5">
-      <h2 class="h4 fw-bold section-title mb-3">What We Believe In</h2>
+      <div class="section-head d-flex align-items-end justify-content-between gap-3 flex-wrap">
+        <div>
+          <h2 class="h3 fw-bold mb-1">What We Believe In</h2>
+          <p class="text-muted mb-0">The “Bloom rules” (aka the only rules we like).</p>
+        </div>
+        <img src="dumbell2.png" class="section-icon" alt="Section icon" />
+      </div>
 
-      <div class="row g-4">
+      <div class="row g-4 mt-1">
         <div class="col-12 col-md-4">
-          <div class="bg-white p-4 rounded-3 border h-100">
+          <div class="card-soft h-100">
             <h3 class="h6 fw-bold mb-2">Simplicity</h3>
-            <p class="text-secondary mb-0">No overcomplicated plans. Just practical steps.</p>
+            <p class="text-muted mb-0">We prioritize clarity and usability over unnecessary complexity.</p>
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="bg-white p-4 rounded-3 border h-100">
+          <div class="card-soft h-100">
             <h3 class="h6 fw-bold mb-2">Consistency</h3>
-            <p class="text-secondary mb-0">Small habits done often beat big bursts of effort.</p>
+            <p class="text-muted mb-0">Small habits done matter more than perfect plans.</p>
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="bg-white p-4 rounded-3 border h-100">
+          <div class="card-soft h-100">
             <h3 class="h6 fw-bold mb-2">Real Life</h3>
-            <p class="text-secondary mb-0">We build for busy people, not fictional robots.</p>
+            <p class="text-muted mb-0">Everything we build is designed to work within real schedules and real routines.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Bottom CTA -->
-    <section class="bg-white p-4 p-md-5 rounded-3 border">
+    <section class="cta-soft">
       <div class="row align-items-center g-3">
         <div class="col-12 col-lg-8">
           <h2 class="h4 fw-bold mb-1">Start where you are.</h2>
-          <p class="text-secondary mb-0">
-            Use the calculator to estimate your BMI or daily calorie needs, then build from there.
+          <p class="text-muted mb-0">
+            Use the calculator to estimate your BMI or daily calorie needs — no pressure, 
+            just information to help you take the next step.
           </p>
         </div>
         <div class="col-12 col-lg-4 text-lg-end">
-          <a class="btn btn-dark btn-lg w-100 w-lg-auto" href="calculator.html">Open Calculator</a>
+          <a class="btn btn-primary-soft btn-lg w-100 w-lg-auto" href="calculator.html">Open Calculator</a>
         </div>
       </div>
     </section>
@@ -169,8 +267,8 @@
   <!-- ✅ Footer (keep same across all pages) -->
   <footer class="bg-white border-top">
     <div class="container py-4 d-flex flex-column flex-md-row gap-2 justify-content-between">
-      <span class="text-secondary small">© 2025 Bloom. All rights reserved.</span>
-      <span class="text-secondary small">Fitness • Nutrition • Healthy Habits</span>
+      <span class="text-muted small">© 2025 Bloom. All rights reserved.</span>
+      <span class="text-muted small">Fitness • Nutrition • Healthy Habits</span>
     </div>
   </footer>
 
