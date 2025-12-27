@@ -36,12 +36,13 @@
   color: var(--text);
 }
 
-/* Navbar active link vibe */
-.navbar .nav-link{
-  color: var(--text);
-}
-.navbar .nav-link.active{
-  color: var(--purple);
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #6f42c1, #512da8);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* =========================
@@ -321,4 +322,39 @@
     right: 8px;
     top: 8px;
   }
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: linear-gradient(to right, #512da8, #311b92);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+.footer h5,
+.footer h6 {
+    color: #e1bee7;
+}
+
+.footer p,
+.footer a {
+    color: #ddd;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-line {
+    border-color: rgba(255,255,255,0.2);
+    margin: 20px 0;
 }
